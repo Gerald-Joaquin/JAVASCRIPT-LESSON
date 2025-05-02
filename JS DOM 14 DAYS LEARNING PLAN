@@ -1,5 +1,5 @@
 
-📅 Day 1: What is the DOM?
+✔ 📅 Day 1: What is the DOM?
 
 Topic: Understanding the DOM tree structure.
 Task: Create a simple HTML page. Use `document.getElementById()` to change the text of a paragraph.
