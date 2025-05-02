@@ -1,0 +1,70 @@
+
+📅 Day 1: What is the DOM?
+
+Topic: Understanding the DOM tree structure.
+Task: Create a simple HTML page. Use `document.getElementById()` to change the text of a paragraph.
+
+📅 Day 2: DOM Methods Basics
+
+Topic: `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`
+Task: Make a page with headings, paragraphs, and divs. Use all three methods to select and update different elements.
+
+📅 Day 3: Exploring the Document Object
+
+Topic: Properties like `document.title`, `document.body`, etc.
+Task: Write a script that prints the page title and counts the number of elements inside the body.
+
+📅 Day 4: Working with DOM Elements
+
+Topic: `innerHTML`, `textContent`, `value`, `attributes`
+Task: Add a text input and a button. When clicked, show the input value in a div using `textContent`.
+
+📅 Day 5: Changing HTML Content Dynamically
+
+topic: Modify HTML using `innerHTML`, `innerText`, and `textContent`
+Task: Create a section with dummy text and buttons to change its content in different ways.
+
+📅 Day 6: Manipulating Attributes
+
+Topic: Using `setAttribute()`, accessing attributes directly.
+Task: Add an image and buttons to change its `src` and `alt` text.
+
+📅 Day 7: Changing CSS Styles with DOM
+
+Topic: Using `element.style` to change CSS.
+Task: Build a theme switcher with buttons to change text color and background.
+
+📅 Day 8: Handling Basic Events
+
+Topic: Inline events (`onclick`, `onmouseover`, etc.)
+Task: Create a box that changes color when hovered, clicked, or double-clicked.
+
+📅 Day 9: addEventListener()
+
+Topic: Attach multiple events to elements using `addEventListener()`
+Task: Make a list of items. Log the item text in the console when each is clicked.
+
+📅 Day 10: DOM Nodes Navigation
+
+Topic: `parentNode`, `childNodes`, `firstChild`, `lastChild`, `nextSibling`, etc.
+Task: Create a nested list and write a script to navigate and highlight certain nodes.
+
+📅 Day 11: Create and Remove Elements**
+
+Topic: `createElement()`, `appendChild()`, `removeChild()`
+Task: Make a "To-Do List" where you can add and remove items using buttons.
+
+📅 Day 12: DOM Collections and NodeLists
+
+Topic: `getElementsByTagName()`, `getElementsByClassName()`, `querySelectorAll()`
+Task: Create a style toggle for multiple selected elements using a NodeList.
+
+📅 Day 13: Forms and Input Validation
+
+Topic: Accessing form values and basic validation
+Task: Create a form and validate required fields before submission using JavaScript.
+
+📅 Day 14: DOM Project – Interactive Profile Card
+
+Topic: Apply all learned DOM concepts
+Task: Build an interactive profile card that updates user info, styles, and image based on form input.
