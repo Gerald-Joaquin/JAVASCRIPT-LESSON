@@ -4,7 +4,7 @@
 Topic: Understanding the DOM tree structure.
 Task: Create a simple HTML page. Use `document.getElementById()` to change the text of a paragraph.
 
-📅 Day 2: DOM Methods Basics
+✔📅 Day 2: DOM Methods Basics
 
 Topic: `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`
 Task: Make a page with headings, paragraphs, and divs. Use all three methods to select and update different elements.
