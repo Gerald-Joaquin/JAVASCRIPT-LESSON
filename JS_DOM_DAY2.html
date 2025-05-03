@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM DAY 2</title>
+  </head>
+  <body>
+    <h1>
+      Task: Make a page with headings, paragraphs, and divs. Use all three
+      methods to select and update different elements.
+    </h1>
+    <hr />
+
+    <header>
+      <h2>Welcome to software development, Guest!</h2>
+    </header>
+    <div id="container">
+      <p id="paragraph-1">This is paragraph 1</p>
+
+      <p class="paragraph">This is paragraph 2</p>
+
+      <h4>This is paragraph 3</h4>
+    </div>
+
+    <script>
+      // `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`
+
+      const container = document.getElementById("container"); // parent element of all
+
+      let paragraph1 = document.getElementById("paragraph-1");
+      paragraph1.innerHTML = "1st paragraph updated text using id."; // to update the text in inner html elements
+
+      let paragraph2 = document.getElementsByClassName("paragraph");
+      for (let text of paragraph2) {
+        text.innerHTML = "2nd paragraph updated text using class";
+        text.style.color = "blue"; // this js function is to change the style of an html object
+      }
+
+      let paragraph3 = document.getElementsByTagName("h4");
+      for (let ptag of paragraph3) {
+        ptag.innerHTML = "3rd paragraph updated text using tagname";
+      }
+
+      // EXTRAS -------------------------------
+      // createElement(), appendChild(), innerHTML, removeChild(), document.write()
+      let newElement = document.createElement("p"); // new variable to create new element
+      newElement.innerHTML = "new paragraph element";
+
+      container.appendChild(newElement); // appenchild will added at the last element inside the parent element
+      container.removeChild(paragraph1); // will remove child element
+      document.write("<h2>This is written directly to the page</h2>");
+    </script>
+  </body>
+</html>

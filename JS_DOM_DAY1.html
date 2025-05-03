@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM DAY 1</title>
+  </head>
+  <body>
+    <h1>
+      Task: Create a simple HTML page. Use `document.getElementById()` to change
+      the text of a paragraph.
+    </h1>
+    <hr />
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint
+      veritatis, eos omnis facilis molestiae a! Debitis perferendis, minima,
+      blanditiis quibusdam nemo quo repellendus tenetur at doloremque
+      dignissimos quia veniam.
+    </p>
+
+    <button id="btn" onclick="sub()">SUBCRIBE</button>
+
+    <script>
+      let change = document.getElementById("paragraph"); // Declared a variable 'change' then access the paragraph using id with js dom 'getElementById'
+      change.innerHTML = "text has been changed"; //using 'innerHTML' I changed the value of paragraph into 'text has been changed'
+
+      function sub() {
+        let subcribed = document.getElementById("btn"); //another example
+        subcribed.innerHTML = "SUBCRIBED!";
+      }
+    </script>
+  </body>
+  \
+</html>
