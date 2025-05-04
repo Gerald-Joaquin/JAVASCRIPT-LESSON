@@ -9,7 +9,7 @@ Task: Create a simple HTML page. Use `document.getElementById()` to change the t
 Topic: `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`
 Task: Make a page with headings, paragraphs, and divs. Use all three methods to select and update different elements.
 
-📅 Day 3: Exploring the Document Object
+✔📅 Day 3: Exploring the Document Object
 
 Topic: Properties like `document.title`, `document.body`, etc.
 Task: Write a script that prints the page title and counts the number of elements inside the body.
