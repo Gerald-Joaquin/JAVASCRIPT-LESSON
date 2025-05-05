@@ -14,7 +14,7 @@ Task: Make a page with headings, paragraphs, and divs. Use all three methods to 
 Topic: Properties like `document.title`, `document.body`, etc.
 Task: Write a script that prints the page title and counts the number of elements inside the body.
 
-📅 Day 4: Working with DOM Elements
+✔📅 Day 4: Working with DOM Elements
 
 Topic: `innerHTML`, `textContent`, `value`, `attributes`
 Task: Add a text input and a button. When clicked, show the input value in a div using `textContent`.
