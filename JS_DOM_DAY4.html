@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM DAY 4</title>
+  </head>
+  <body>
+    <h1>
+      Task: Add a text input and a button. When clicked, show the input value in
+      a div using `textContent`.
+    </h1>
+    <hr />
+
+    <h1>Form</h1>
+
+    <div>
+      <label for="">Thoughts: </label>
+      <input type="text" id="text" />
+      <button onclick="submit()">Submit</button>
+      <!-- JS Dom will execute when the button is clicked-->
+    </div>
+    <div>
+      <p id="output"></p>
+    </div>
+
+    <script>
+      function submit() {
+        // 1. Finds the <input> element with id="text". 2. Uses .value to get whatever the user typed into that input.
+        let text = document.getElementById("text").value;
+        const outputDiv = document.getElementById("output");
+        outputDiv.textContent = text;
+      }
+    </script>
+  </body>
+</html>
