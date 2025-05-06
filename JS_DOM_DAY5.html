@@ -1,0 +1,53 @@
+<!--  Create a section with dummy text and buttons to change its content in different ways.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM DAY 5</title>
+  </head>
+  <body>
+    <h1>
+      Task: Create a section with dummy text and buttons to change its content
+      in different ways.
+    </h1>
+    <hr />
+
+    <h2>Modify HTML Content</h2>
+
+    <div id="content">
+      <strong>This is some <em>dummy</em> text.</strong>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta eum,
+        odit doloremque necessitatibus autem distinctio illo quibusdam rem
+        nesciunt quam ducimus? Quis amet error totam fugiat non ad ullam
+        consequatur.
+        <br />
+      </p>
+    </div>
+
+    <button onclick="changeinnerHTML()">change using innerHTML</button>
+    <button onclick="changetextContent()">change using textContent</button>
+    <button onclick="changeinnerText()">change using innerText</button>
+
+    <script>
+      const htmlContent = document.getElementById("content");
+
+      function changeinnerHTML() {
+        htmlContent.innerHTML =
+          "this section was changed using innerHTML! " + "<hr/>";
+      }
+
+      function changetextContent() {
+        htmlContent.textContent =
+          "this section was changed using textContent" + "<hr/>";
+      }
+
+      function changeinnerText() {
+        htmlContent.innerText =
+          "this section was changed using innerText" + "<hr/>";
+      }
+    </script>
+  </body>
+</html>
