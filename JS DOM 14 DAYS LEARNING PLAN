@@ -19,7 +19,7 @@ Task: Write a script that prints the page title and counts the number of element
 Topic: `innerHTML`, `textContent`, `value`, `attributes`
 Task: Add a text input and a button. When clicked, show the input value in a div using `textContent`.
 
-📅 Day 5: Changing HTML Content Dynamically
+✔📅 Day 5: Changing HTML Content Dynamically
 
 topic: Modify HTML using `innerHTML`, `innerText`, and `textContent`
 Task: Create a section with dummy text and buttons to change its content in different ways.
