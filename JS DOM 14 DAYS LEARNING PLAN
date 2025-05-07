@@ -24,7 +24,7 @@ Task: Add a text input and a button. When clicked, show the input value in a div
 topic: Modify HTML using `innerHTML`, `innerText`, and `textContent`
 Task: Create a section with dummy text and buttons to change its content in different ways.
 
-📅 Day 6: Manipulating Attributes
+✔📅 Day 6: Manipulating Attributes
 
 Topic: Using `setAttribute()`, accessing attributes directly.
 Task: Add an image and buttons to change its `src` and `alt` text.
