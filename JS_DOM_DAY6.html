@@ -1,0 +1,84 @@
+<!--  Create a section with dummy text and buttons to change its content in different ways.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM DAY 6</title>
+    <style>
+      .content img {
+        width: 600px;
+      }
+
+      .image-gallery {
+        display: flex;
+      }
+      .image-gallery img {
+        width: 200px;
+      }
+
+      button {
+        margin: 20px;
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task: Add an image and buttons to change its `src` and `alt` text.</h1>
+    <hr />
+
+    <h2>Image gallery</h2>
+
+    <div class="content">
+      <img
+        id="dynamic-image"
+        src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+        alt="image-1"
+      />
+    </div>
+    <div class="image-gallery">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEENdIy8V-QczTy926hRZpONbUJ5icBBeBXEWxml1Au6tYWZ9mFGGlyz09orza_SwGTHo&usqp=CAU"
+        alt="image2"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKqo63c6FYz1H9lUw5FSDeDM6UIwBGlwvGg2Ln1htGaY2B-RuwTdusBf9klaUkK2Mpsi0&usqp=CAUima"
+        alt="image3"
+      />
+      <img
+        src="https://www.adobe.com/uk/creativecloud/photography/discover/media_1271a7f98c8f0a907643346bd952b678aaafc3a22.png?width=750&format=png&optimize=medium"
+        alt="image3"
+      />
+    </div>
+
+    <button
+      onclick="changeImage('https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D', 'Image 1')"
+    >
+      Image 1
+    </button>
+    <button
+      onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEENdIy8V-QczTy926hRZpONbUJ5icBBeBXEWxml1Au6tYWZ9mFGGlyz09orza_SwGTHo&usqp=CAU', 'Image 2')"
+    >
+      Image 2
+    </button>
+    <button
+      onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKqo63c6FYz1H9lUw5FSDeDM6UIwBGlwvGg2Ln1htGaY2B-RuwTdusBf9klaUkK2Mpsi0&usqp=CAU', 'Image 3')"
+    >
+      Image 3
+    </button>
+    <button
+      onclick="changeImage('https://www.adobe.com/uk/creativecloud/photography/discover/media_1271a7f98c8f0a907643346bd952b678aaafc3a22.png?width=750&format=png&optimize=medium', 'Image 4')"
+    >
+      Image 4
+    </button>
+
+    <script>
+      function changeImage(src, alt) {
+        const picture = document.getElementById("dynamic-image");
+        picture.setAttribute("src", src);
+        picture.setAttribute("alt", alt);
+      }
+    </script>
+  </body>
+</html>
