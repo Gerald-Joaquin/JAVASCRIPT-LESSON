@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing CSS Styles with DOM</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* full screen height */
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .theme-switcher {
+        text-align: center;
+        background-color: rgb(140, 140, 182);
+        padding: 20px 40px;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+      }
+
+      .theme-switcher button {
+        padding: 10px 15px;
+        border-radius: 20px;
+      }
+
+      .theme-switcher button:hover {
+        color: aliceblue;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Task: Build a theme switcher with buttons to change text color and
+      background.
+    </h1>
+
+    <div class="theme-switcher" id="container">
+      <h1 id="textColor">switch theme?</h1>
+      <button type="button" onclick="switcherBg()">
+        Click to change the background color
+      </button>
+      <button type="button" onclick="switcherTxt()">
+        Click to change the text color
+      </button>
+    </div>
+
+    <script>
+      function switcherBg() {
+        const container = document.getElementById("container");
+        const currentColor = container.style.backgroundColor;
+
+        if (currentColor === "black") {
+          container.style.backgroundColor = "rgb(140, 140, 182)"; // original color
+        } else {
+          container.style.backgroundColor = "black";
+        }
+      }
+
+      function switcherTxt() {
+        const text = document.getElementById("textColor");
+        const currentColor = text.style.color;
+
+        if (currentColor === "white") {
+          text.style.color = "black";
+        } else {
+          text.style.color = "white";
+        }
+      }
+    </script>
+  </body>
+</html>
