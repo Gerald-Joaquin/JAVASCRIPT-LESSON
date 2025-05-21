@@ -29,7 +29,7 @@ Task: Create a section with dummy text and buttons to change its content in diff
 Topic: Using `setAttribute()`, accessing attributes directly.
 Task: Add an image and buttons to change its `src` and `alt` text.
 
-📅 Day 7: Changing CSS Styles with DOM
+✔📅 Day 7: Changing CSS Styles with DOM
 
 Topic: Using `element.style` to change CSS.
 Task: Build a theme switcher with buttons to change text color and background.
