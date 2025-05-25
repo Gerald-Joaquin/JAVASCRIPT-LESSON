@@ -34,7 +34,7 @@ Task: Add an image and buttons to change its `src` and `alt` text.
 Topic: Using `element.style` to change CSS.
 Task: Build a theme switcher with buttons to change text color and background.
 
-📅 Day 8: Handling Basic Events
+✔📅 Day 8: Handling Basic Events
 
 Topic: Inline events (`onclick`, `onmouseover`, etc.)
 Task: Create a box that changes color when hovered, clicked, or double-clicked.
