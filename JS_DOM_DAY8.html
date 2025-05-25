@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling Basic Events</title>
+    <style>
+      #colorBox {
+        width: 200px;
+        height: 200px;
+        background-color: lightgray;
+        border: 2px solid #333;
+        margin: 50px auto;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Create a box that changes color when hovered, clicked, or double-clicked.
+    </h1>
+
+    <div id="colorBox"></div>
+
+    <script>
+      const box = document.getElementById("colorBox");
+
+      // Hover: change to blue
+      box.addEventListener("mouseenter", () => {
+        box.style.backgroundColor = "skyblue";
+        ("");
+        console.log("hovered");
+      });
+
+      // Leave: revert to default
+      box.addEventListener("mouseleave", () => {
+        box.style.backgroundColor = "lightgray";
+        console.log("Default");
+      });
+
+      // Click: change to green
+      box.addEventListener("click", () => {
+        box.style.backgroundColor = "lightgreen";
+        console.log("clicked");
+      });
+
+      // Double-click: change to red
+      box.addEventListener("dblclick", () => {
+        box.style.backgroundColor = "tomato";
+      });
+    </script>
+  </body>
+</html>
