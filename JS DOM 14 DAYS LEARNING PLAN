@@ -39,7 +39,7 @@ Task: Build a theme switcher with buttons to change text color and background.
 Topic: Inline events (`onclick`, `onmouseover`, etc.)
 Task: Create a box that changes color when hovered, clicked, or double-clicked.
 
-📅 Day 9: addEventListener()
+✔📅 Day 9: addEventListener()
 
 Topic: Attach multiple events to elements using `addEventListener()`
 Task: Make a list of items. Log the item text in the console when each is clicked.
