@@ -49,7 +49,7 @@ Task: Make a list of items. Log the item text in the console when each is clicke
 Topic: `parentNode`, `childNodes`, `firstChild`, `lastChild`, `nextSibling`, etc.
 Task: Create a nested list and write a script to navigate and highlight certain nodes.
 
-📅 Day 11: Create and Remove Elements**
+✔ 📅 Day 11: Create and Remove Elements**
 
 Topic: `createElement()`, `appendChild()`, `removeChild()`
 Task: Make a "To-Do List" where you can add and remove items using buttons.
