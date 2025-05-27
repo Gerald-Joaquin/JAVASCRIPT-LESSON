@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create and Remove Elements</title>
+  </head>
+  <body>
+    <h1>
+      Task: Make a "To-Do List" where you can add and remove items using
+      buttons.
+    </h1>
+
+    <div>
+      <label for="inputNotes">To do list app: </label>
+      <input id="inputNotes" type="text" />
+      <button onclick="addNote()">Submit</button>
+    </div>
+
+    <div id="notesContainer"></div>
+
+    <script>
+      function addNote() {
+        let input = document.getElementById("inputNotes");
+        let value = input.value.trim();
+
+        if (value === "") {
+          alert("Empty Notes");
+          return;
+        }
+
+        let note = document.createElement("p");
+        note.className = "Todo Item";
+        note.textContent = value;
+
+        let removeBtn = document.createElement("span");
+        removeBtn.className = "remove-btn";
+        removeBtn.textContent = "    ❌";
+        removeBtn.onclick = function () {
+          note.remove();
+        };
+
+        note.appendChild(removeBtn);
+
+        document.getElementById("notesContainer").appendChild(note);
+
+        input.value = "";
+      }
+    </script>
+  </body>
+</html>
